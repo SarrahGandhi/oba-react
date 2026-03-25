@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    background-color: none;
+}
+
+.Landing-container {
+
+    background: url('/bearing-background.jpg');
+    background-color: none;
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    min-height: 95vh;
+
+    aspect-ratio: 79/35;
+    text-align: left;
+    border: 0px;
+
+
+
+    /* Don't forget this! */
+}
+
+.landing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    padding-left: 50px;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.landing-text h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 154.3%;
+    /* 37.032px */
+    letter-spacing: 2.16px;
+}
+
+.landing-text h2 {
+    color: #FFF;
+    font-family: "Abril Fatface";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%;
+    align-items: left;
+    /* 55.68px */
+}
+
+.landing-text p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+
+    /* 39.36px */
+}
+
+.landing-button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button {
+    color: #00400D;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 164%;
+    padding: 10px 25px;
+    border: 0px;
+    background-color: #FFF;
+    /* 39.36px */
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #FFF;
+}

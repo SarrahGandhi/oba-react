@@ -1,0 +1,60 @@
+.client-container h1 {
+    color: #000;
+    text-align: center;
+    font-family: var(--aw-font-sans, ui-sans-serif), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+
+    /* 55.68px */
+}
+
+.client-container h2 {
+    color: #000;
+    text-align: center;
+    font-family: var(--aw-font-sans, ui-sans-serif), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+
+    /* 55.68px */
+}
+
+.client-names-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 150px;
+
+
+}
+
+.client-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(226 232 240);
+    padding: 0;
+    max-width: 250px;
+    flex: 1;
+}
+
+.client-names ul {
+    padding: 5px 10px;
+
+}
+
+.client-names li {
+    list-style: none;
+    text-align: left;
+    color: #000;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 181%;
+    padding: 10px;
+
+}

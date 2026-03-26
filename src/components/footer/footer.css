@@ -1,0 +1,56 @@
+footer {
+    background-color: rgb(245, 245, 245);
+}
+
+.footer-contact-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 60px;
+
+    padding: 0;
+
+}
+
+.contact-details {
+    max-width: 300px;
+}
+
+.footer-contact-details li {
+    list-style: none;
+    text-align: left;
+    font-size: 12px;
+    padding: 0;
+    line-height: 181%;
+
+
+}
+
+
+
+.footer-contact-details ul {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+
+}
+
+.footer-contact-details h1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+}
+
+.products-list {
+    white-space: nowrap;
+}
+
+.footer-bottom {
+    text-align: left;
+    margin: 10px 60px;
+    font-size: 12px;
+}

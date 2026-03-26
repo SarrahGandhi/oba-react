@@ -2,6 +2,8 @@
 
 :root {
     background-color: none;
+    margin: 0;
+    padding: 0;
 }
 
 .Landing-container {
@@ -13,7 +15,8 @@
     background-position: center;
     min-height: 100%;
     min-height: 95vh;
-
+    padding: 0;
+    margin-top: 0;
     aspect-ratio: 79/35;
     text-align: left;
     border: 0px;
@@ -31,7 +34,7 @@
     padding-left: 50px;
     justify-content: space-around;
     gap: 40px;
-    margin-top: 100px;
+
 }
 
 .landing-text h1 {

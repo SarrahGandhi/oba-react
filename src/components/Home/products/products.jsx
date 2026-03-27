@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./products.css"
 function Products() {
     return (
@@ -8,12 +9,12 @@ function Products() {
                 <div className="product-categories-container">
                     <img src="/bearing.png" alt="bearing" />
                     <h2>Bearings</h2>
-                    <p>Read More</p>
+                    <Link className="link" to="/bearing">Read More</Link>
                 </div>
                 <div className="product-categories-container">
                     <img src="/bearing.png" alt="bearing" />
                     <h2>Linear Automation</h2>
-                    <p>Read More</p>
+                    <Link className="link" to="/linear-automation">Read More</Link>
                 </div>
             </div>
         </div>

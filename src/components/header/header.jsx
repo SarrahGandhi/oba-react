@@ -1,5 +1,6 @@
 import react, { useState } from "react";
 import "./header.css"
+import { NavLink } from "react-router-dom";
 function Header() {
     const [searchTerm, setSearchTerm] = useState("");
     const handleSearch = (e) => {
@@ -12,11 +13,11 @@ function Header() {
             <div className="nav">
                 {/* <h1>Delta Technologies</h1> */}
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>Services</li>
-                    <li>About</li>
-                    <li>Enquiry</li>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/products">Products</NavLink></li>
+                    <li><NavLink to="/services">Services</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/enquiry">Enquiry</NavLink></li>
 
                 </ul>
                 <form className="search-form" onSubmit={handleSearch}>

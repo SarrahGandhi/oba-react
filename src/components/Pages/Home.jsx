@@ -1,8 +1,8 @@
 import react from "react"
-import LandingPage from "../landing-page/landing-page"
-import Products from "../products/products"
-import ServicePage from "../Service-page/service-page"
-import Clients from "../Clients/clients"
+import LandingPage from "../Home/landing-page/landing-page"
+import Products from "../Home/products/products"
+import ServicePage from "../Home/Service-page/service-page"
+import Clients from "../Home/Clients/clients"
 export default function Home() {
     return (
         <main className="home-container">

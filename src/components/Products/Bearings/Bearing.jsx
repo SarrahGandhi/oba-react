@@ -11,7 +11,7 @@ function Bearings() {
                 {bearingProducts.map((product) => (<div key={product.id}>
                     <img src={product.img} alt={product.productName} />
                     <h3>{product.productName}</h3>
-                    <button><Link to={`/bearing/${product.id}`}>Read More</Link></button>
+                    <Link to={`/bearing/${product.id}`}><button>Read More</button></Link>
                 </div>))}
             </div>
         </main>

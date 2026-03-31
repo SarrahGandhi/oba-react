@@ -1,0 +1,89 @@
+.services-page {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.services-page h1 {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+
+.services-page p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+.services-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    color: #000;
+    text-align: left;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.services-list h2 {
+
+    color: #000;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.services-list li {
+    list-style: decimal;
+    text-align: left;
+    font-size: 12px;
+
+}
+
+.services-menu {
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+    max-height: max-content;
+
+}
+
+.services-menu-list {
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+
+.services-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+.services-menu h2 {
+    color: black;
+}
+
+.services-menu li {
+    list-style: none;
+}
+
+.services-whatsapp button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+
+    cursor: pointer;
+}

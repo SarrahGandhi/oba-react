@@ -16,14 +16,13 @@ const Footer = () => {
 
                     <ul className="products-list">
                         <h1>Products</h1>
-                        <li>
-                            Precision Bearings
+                        <li><Link to="/bearing/1">Precision Bearings</Link>
                         </li>
-                        <li>Linear Guideways</li>
-                        <li>BallScrews</li>
-                        <li>Linear Bearings</li>
-                        <li>Rod-end Bearings</li>
-                        <li>Spindles</li>
+                        <li><Link to="/linear-automation">Linear Guideways</Link></li>
+                        <li><Link to="/ball-screws">BallScrews</Link></li>
+                        <li><Link to="/linear-bearings">Linear Bearings</Link></li>
+                        <li><Link to="/bearing/6">Rod-end Bearings</Link></li>
+                        <li><Link to="/spindles">Spindles</Link></li>
                     </ul>
                     <ul>
                         <h1>Services</h1>

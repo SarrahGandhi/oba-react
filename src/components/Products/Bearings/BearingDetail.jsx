@@ -15,12 +15,17 @@ function BearingDetail() {
             <div className="bearing-detail-container">
                 <img src={products.img} alt={products.productName} />
 
-
-                <p>{products.description}</p>
-                <ul>
-                    {products.keyfeatures.map((feature, index) => { <li>{feature}</li> })}
-                </ul>
-
+                <div className="bearing-detail-content">
+                    <p>{products.description}</p>
+                    <h4>Key Features</h4>
+                    <ul>
+                        {products.keyfeatures?.map((feature, index) => (<li key={index}>{feature}</li>))}
+                    </ul>
+                    <h4>Applications</h4>
+                    <ul>
+                        {products.applications?.map((feature, index) => (<li key={index}>{feature}</li>))}
+                    </ul>
+                </div>
             </div>
 
         </div>

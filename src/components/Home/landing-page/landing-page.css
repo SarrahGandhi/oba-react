@@ -20,7 +20,7 @@
     aspect-ratio: 79/35;
     text-align: left;
     border: 0px;
-
+    max-width: 100vw;
 
 
     /* Don't forget this! */

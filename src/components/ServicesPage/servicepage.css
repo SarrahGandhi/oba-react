@@ -1,125 +1,273 @@
 .services-page {
+    max-width: 1000px;
     margin: 0 auto;
-    max-width: 1100px;
-    padding: 0;
+    padding: 0 20px;
+    font-family: inherit;
+    /* Inherit standard project font */
 }
 
-ul {
-    padding: 0;
+
+
+/* Base typography */
+.services-page h1,
+.services-page h2,
+.services-page h3,
+.services-page h4,
+.services-page p {
+    margin: 0;
+    color: #111;
 }
 
-.services-page h1 {
-    color: #000;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    text-align: left;
+.services-page ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Header Section */
+.services-page-header {
+    background-color: #f4f7f6;
+    /* Light, elegant hue */
+    padding: 80px 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 16px;
     text-align: center;
 }
 
-.services-menu-list a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 16px;
+.services-page-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
 }
 
-.services-menu-list a:hover {
-    color: #000;
-    text-decoration: underline;
+.services-page-header p {
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-
-.services-page p {
-    color: #000;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
-}
-
+/* Main Container */
 .services-container {
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
-
     gap: 40px;
-    color: #000;
-    text-align: left;
-    font-size: 12px;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.services-list h2 {
-    margin-top: 30px;
-    color: #000;
-    font-weight: 600;
-    padding: 20px 0px;
-
-}
-
-.services-list li {
-    list-style: decimal;
-    list-style-position: inside;
-    text-align: left;
-    font-size: 16px;
-    padding-bottom: 10px;
-
-}
-
+/* Sidebar Menu */
 .services-menu {
-    text-align: left;
-
+    flex: 0 0 280px;
+    position: sticky;
+    top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-width: 300px;
-    max-height: max-content;
-
 }
 
 .services-menu-list {
-    border: 1px solid black;
-    padding: 5px 20px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
 }
 
-.services-menu ul {
+.services-menu-list h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.services-menu-list ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: black;
+    gap: 12px;
 }
 
-.services-menu h2 {
-    color: black;
-}
-
-.services-menu li {
+.services-menu-list li {
     list-style: none;
 }
 
-.services-whatsapp button {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-
-    cursor: pointer;
+.services-menu-list a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
+.services-menu-list a:hover {
+    color: #111;
+    font-weight: 700;
+}
+
+.services-whatsapp button {
+    width: 100%;
+    background-color: #8c9e8e;
+    /* Sage green */
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.services-whatsapp button:hover {
+    background-color: #7b8d7d;
+}
+
+/* Services Content List */
+.services-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.services-list-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f4f7f6;
+    color: #111;
+}
+
+.service-item {
+    margin-bottom: 40px;
+    list-style: none;
+    scroll-margin-top: 160px;
+}
+
+.service-item h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.service-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.service-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.service-item ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.service-item li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+    list-style-type: decimal;
+    text-align: left;
+}
+
+/* Levels inside Bearing Repair */
 .levels {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .level-1,
 .level-2,
 .level-3 {
-    border: 1px solid rgba(0, 0, 0, 0.225);
-    padding: 5px 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 25px;
     flex: 1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.services-list h4 {
-    font-size: 20px;
+.level-1:hover,
+.level-2:hover,
+.level-3:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
 
+.level-1 h4,
+.level-2 h4,
+.level-3 h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.level-1 p,
+.level-2 p,
+.level-3 p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.level-1 ul,
+.level-2 ul,
+.level-3 ul {
+    padding-left: 15px;
+}
+
+.level-1 li,
+.level-2 li,
+.level-3 li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .levels {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page-header {
+        padding: 50px 20px;
+    }
+
+    .services-page-header h1 {
+        font-size: 36px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .services-menu {
+        flex: none;
+        width: 100%;
+        position: static;
+    }
+
+    .services-list-section h1 {
+        font-size: 24px;
+    }
+
+    .service-item h2 {
+        font-size: 20px;
+    }
 }

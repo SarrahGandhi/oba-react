@@ -1,0 +1,67 @@
+.linear-automation-container {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.linear-automation-container h1 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.linear-automation-container h2 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.linear-automation-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.linear-automation-products div {
+
+    width: calc((100% - 40px) / 3);
+    border: 1px solid rgb(226 232 240);
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.linear-automation-products img {
+
+    margin-bottom: 30px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width: 100%;
+    /* border: 1px solid rgb(226 232 240); */
+
+}
+
+.linear-automation-products h3 {
+    font-size: 16px;
+    text-align: left;
+}
+
+.linear-automation-products button {
+    background: #fdfdfd;
+    width: 100%;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.linear-automation-products button:hover {
+    background: #000000;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+}

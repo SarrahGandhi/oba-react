@@ -74,6 +74,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 25px;
+    scroll-margin-top: 120px;
 }
 
 .services-menu-list h2 {
@@ -144,7 +145,7 @@
 .service-item {
     margin-bottom: 40px;
     list-style: none;
-    scroll-margin-top: 160px;
+    scroll-margin-top: 120px;
 }
 
 .service-item h2 {

@@ -17,13 +17,13 @@ import Accessories from './components/Products/Accessories/accessories'
 import LinearAutomationDetail from './components/Products/LinearAutomation/linearautomationdetail'
 import PowerTransmissionDetail from './components/Products/PowerTransmission/powertransmissiondetail'
 import AccessoriesDetail from './components/Products/Accessories/accessoriesdetail'
-
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <BrowserRouter>
+
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

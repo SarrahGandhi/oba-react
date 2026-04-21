@@ -28,6 +28,7 @@
     gap: 50px;
     justify-content: center;
     color: #000;
+    max-width: 800px;
 
 
 }
@@ -60,7 +61,7 @@
     padding: 30px;
     /* Reduced padding from 100px to avoid text squishing in 3 boxes */
     background: #FFF;
-    flex: 0 1 calc(33.333% - 34px);
+    flex: 0 1 calc(50% - 25px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
     /* Enforces 3 items per row and prevents bottom 2 from stretching */
@@ -68,8 +69,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 250px;
+    min-width: 200px;
 }
+
 
 .product-categories-container:hover {
     transform: translateY(-5px);
@@ -78,7 +80,6 @@
 
 .product-categories-container img {
     max-width: 150px;
-    margin-bottom: 30px;
     transition: transform 0.3s ease;
 }
 

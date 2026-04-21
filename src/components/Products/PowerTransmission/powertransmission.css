@@ -1,22 +1,22 @@
-.linear-automation-container {
+.power-transmission-container {
     max-width: 1000px;
     margin: 50px auto;
 }
 
-.linear-automation-container h1 {
+.power-transmission-container h1 {
     text-align: left;
     font-size: 32px;
     font-weight: 700;
 }
 
-.linear-automation-container h2 {
+.power-transmission-container h2 {
     text-align: left;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 50px;
 }
 
-.linear-automation-products {
+.power-transmission-products {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@
 
 }
 
-.linear-automation-products div {
+.power-transmission-products div {
 
     width: calc((100% - 40px) / 3);
     border: 1px solid rgb(226 232 240);
@@ -36,7 +36,7 @@
     box-sizing: border-box;
 }
 
-.linear-automation-products img {
+.power-transmission-products img {
 
     margin-bottom: 30px;
     aspect-ratio: 4/3;
@@ -46,12 +46,12 @@
 
 }
 
-.linear-automation-products h3 {
+.power-transmission-products h3 {
     font-size: 16px;
     text-align: left;
 }
 
-.linear-automation-products button {
+.power-transmission-products button {
     background: #fdfdfd;
     width: 100%;
     font-size: 12px;
@@ -59,9 +59,70 @@
     border: 2px solid rgb(0, 0, 0);
 }
 
-.linear-automation-products button:hover {
+.power-transmission-products button:hover {
     background: #000000;
     width: 100%;
     color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
+}
+
+.power-transmission-detail {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.power-transmission-detail h3 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.power-transmission-detail-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.power-transmission-detail-container img {
+    max-width: 350px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.power-transmission-detail-content ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+
+.power-transmission-detail-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 16px;
+    gap: 20px;
+
+
+
+}
+
+.power-transmission-detail-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    color: #222;
 }

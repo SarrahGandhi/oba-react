@@ -16,31 +16,24 @@ const Footer = () => {
 
                     <ul className="products-list">
                         <h1>Products</h1>
-                        <li><Link to="/bearing/1">Precision Bearings</Link>
-                        </li>
-                        <li><Link to="/linear-automation">Linear Guideways</Link></li>
-                        <li><Link to="/ball-screws">BallScrews</Link></li>
-                        <li><Link to="/linear-bearings">Linear Bearings</Link></li>
-                        <li><Link to="/bearing/6">Rod-end Bearings</Link></li>
-                        <li><Link to="/spindles">Spindles</Link></li>
+                        <li><Link to="/bearing/1">Precision Bearings</Link></li>
+                        <li><Link to="/linear-automation/1">Linear Guideways</Link></li>
+                        <li><Link to="/linear-automation/2">BallScrews</Link></li>
+                        <li><Link to="/linear-automation/5">Linear Bearings</Link></li>
+                        <li><Link to="/bearing/5">Rod-end Bearings</Link></li>
+                        <li><Link to="/power-transmission/3">Spindles</Link></li>
                     </ul>
                     <ul>
                         <h1>Services</h1>
-                        <li>
-                            Ball Screw Reconditioning
-                        </li>
-                        <li>Bearing Conditioning</li>
-                        <li>Spindle Reconditioning</li>
-
+                        <li><Link to="/services">Ball Screw Reconditioning</Link></li>
+                        <li><Link to="/services#bearing-repair">Bearing Conditioning</Link></li>
+                        <li><Link to="/services">Spindle Reconditioning</Link></li>
                     </ul>
                     <ul>
                         <h1>About Us</h1>
-                        <li>
-                            About OBA
-                        </li>
-                        <li>Manufacturing Facilities</li>
-                        <li>Contact Us</li>
-
+                        <li><Link to="/aboutus">About OBA</Link></li>
+                        <li><Link to="/aboutus#locations">Manufacturing Facilities</Link></li>
+                        <li><Link to="/enquiry">Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className="footer-bottom">

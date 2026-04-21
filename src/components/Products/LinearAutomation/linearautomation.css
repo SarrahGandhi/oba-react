@@ -65,3 +65,64 @@
     color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
 }
+
+.linear-automation-detail {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.linear-automation-detail h3 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.linear-automation-detail-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.linear-automation-detail-container img {
+    max-width: 350px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.linear-automation-detail-content ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+
+.linear-automation-detail-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 16px;
+    gap: 20px;
+
+
+
+}
+
+.linear-automation-detail-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    color: #222;
+}

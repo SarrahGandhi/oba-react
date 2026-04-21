@@ -12,17 +12,17 @@ function Products() {
                     <Link className="link" to="/bearing">Read More</Link>
                 </div>
                 <div className="product-categories-container">
-                    <img src="/bearing.png" alt="bearing" />
+                    <img src="/linearautomation.png" alt="bearing" />
                     <h2>Linear Automation</h2>
                     <Link className="link" to="/linear-automation">Read More</Link>
                 </div>
                 <div className="product-categories-container">
-                    <img src="/bearing.png" alt="bearing" />
+                    <img src="/powertransmission.png" alt="bearing" />
                     <h2>Power Transmission & Mechanical Components</h2>
                     <Link className="link" to="/power-transmission">Read More</Link>
                 </div>
                 <div className="product-categories-container">
-                    <img src="/bearing.png" alt="bearing" />
+                    <img src="/accessories.png" alt="bearing" />
                     <h2>Accessories & Supporting Components</h2>
                     <Link className="link" to="/accessories">Read More</Link>
                 </div>

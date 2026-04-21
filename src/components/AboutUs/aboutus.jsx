@@ -35,36 +35,35 @@ const competencies = [
 ];
 const products = [
     {
-        id: 1,
-        title: "High Frequency Spindles",
-        description: "Precision spindles for Turning, Milling, Drilling and Grinding applications with advanced FEA simulation",
+        "id": 1,
+        "title": "Precision Spindle Bearings",
+        "description": "High-speed bearings with exceptional accuracy and rigidity."
     },
     {
-        id: 2,
-        title: "Precision Ball Screws",
-        description: "8mm to 140mm diameter, 6 meter long, C2, C3, C5, C7 class accuracy",
+        "id": 2,
+        "title": "Ceramic Bearings",
+        "description": "Lightweight, low-friction bearings for high-speed performance."
     },
     {
-        id: 3,
-        title: "Precision Bearings",
-        description: "Taper Roller, Angular Contact, Slewing Ring, Wire Race Bearings in P6, P5, P4, P2 accuracy grades",
+        "id": 3,
+        "title": "Linear Guideways",
+        "description": "Smooth and precise linear motion with high load capacity."
     },
     {
-        id: 4,
-        title: "Rotary Tables",
-        description: "170mm to 5000mm diameter with pneumatic and hydraulic clamping, NC and CNC variants",
+        "id": 4,
+        "title": "Ball Screws",
+        "description": "Efficient conversion of rotary motion into precise linear motion."
     },
     {
-        id: 5,
-        title: "Planetary Gearboxes",
-        description: "High-torque planetary gearboxes for demanding automation applications",
+        "id": 5,
+        "title": "Actuators",
+        "description": "Controlled motion systems for automation and positioning."
     },
     {
-        id: 6,
-        title: "Precision Linear Guides",
-        description: "Ball and roller type linear guides with high precision and load capacity",
+        "id": 6,
+        "title": "Spherical Plain Bearings",
+        "description": "Self-aligning bearings for handling heavy loads and misalignment."
     }
-
 ];
 function AboutUs() {
     return (
@@ -118,35 +117,49 @@ function AboutUs() {
                         <h2>Other Products</h2>
                         <p>We offer a wide range of precision engineering components and custom solutions for diverse industrial applications, including:</p>
                         <ul>
+                            <li>Precision Spindle Bearings</li>
+                            <li>Ceramic Bearings</li>
+                            <li>Needle Bearings</li>
+                            <li>One Way Clutch Bearings</li>
+                            <li>Spherical Plain Bearings</li>
+                            <li>Linear Guideways</li>
                             <li>Ball Screws</li>
-                            <li>Linear Guides</li>
-                            <li>Linear Motors</li>
-                            <li>Linear Actuators</li>
-                            <li>Linear Roller Bearings</li>
-                            <li>Linear Ball Bearings</li>
-                            <li>Linear Bushings</li>
-                            <li>Linear Slides</li>
-                            <li>Linear Stages</li>
-                            <li>Linear Tables</li>
-                            <li>Linear Actuators</li>
-                            <li>Linear Roller Bearings</li>
-
+                            <li>Linear Bearings</li>
+                            <li>Actuators</li>
+                            <li>Spline Shafts and Nuts</li>
                         </ul>
                     </div>
                     <div className="other-companies">
                         <h2>Other Companies</h2>
                         <div className="company-boxes">
-                            <div className="company-box"><h3>Company 1</h3></div>
-                            <div className="company-box"><h3>Company 2</h3></div>
-                            <div className="company-box"><h3>Company 3</h3></div>
-                            <div className="company-box"><h3>Company 4</h3></div>
-                            <div className="company-box"><h3>Company 5</h3></div>
+                            <div class="company-box">
+                                <h3>SKF</h3>
+                            </div>
+
+                            <div class="company-box">
+                                <h3>TIMKEN</h3>
+                            </div>
+
+                            <div class="company-box">
+                                <h3>INA (Schaeffler Group)</h3>
+                            </div>
+
+                            <div class="company-box">
+                                <h3>NSK</h3>
+                            </div>
+
+                            <div class="company-box">
+                                <h3>NACHI</h3>
+                            </div>
+                            <div class="company-box">
+                                <h3>ROLLWAY</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="locations-section">
+            <div className="locations-section" id="locations">
                 <h2>Our Locations</h2>
                 <div className="locations-grid">
                     <div className="location-card">

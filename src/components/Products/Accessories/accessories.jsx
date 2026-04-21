@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { accessoriesProducts } from "../../../bearingdata";
 function Accessories() {
     return (
-        <main className="linear-automation-container">
+        <main className="accessories-container">
             <h1>Accessories</h1>
             <h2>Complete range: spindle, angular contact, tapered, thrust and slewing ring linear-automations for precision applications.</h2>
-            <div className="linear-automation-products">
+            <div className="accessories-products">
                 {accessoriesProducts.map((product) => (<div key={product.id}>
                     <img src={product.img} alt={product.productName} />
                     <h3>{product.productName}</h3>

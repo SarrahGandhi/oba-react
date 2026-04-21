@@ -19,7 +19,7 @@ function BearingDetail() {
                     <p>{products.description}</p>
                     <h4>Key Features</h4>
                     <ul>
-                        {products.keyfeatures?.map((feature, index) => (<li key={index}>{feature}</li>))}
+                        {products.keyFeatures?.map((feature, index) => (<li key={index}>{feature}</li>))}
                     </ul>
                     <h4>Applications</h4>
                     <ul>

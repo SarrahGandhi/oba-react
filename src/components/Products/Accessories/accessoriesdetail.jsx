@@ -10,16 +10,16 @@ function AccessoriesDetail() {
     }
 
     return (
-        <div className="bearing-detail">
+        <div className="accessories-detail">
             <h3>{products.productName}</h3>
-            <div className="bearing-detail-container">
+            <div className="accessories-detail-container">
                 <img src={products.img} alt={products.productName} />
 
-                <div className="bearing-detail-content">
+                <div className="accessories-detail-content">
                     <p>{products.description}</p>
                     <h4>Key Features</h4>
                     <ul>
-                        {products.keyfeatures?.map((feature, index) => (<li key={index}>{feature}</li>))}
+                        {products.keyFeatures?.map((feature, index) => (<li key={index}>{feature}</li>))}
                     </ul>
                     <h4>Applications</h4>
                     <ul>

@@ -75,9 +75,9 @@ function AboutUs() {
             </div>
             <div className="aboutus-container">
                 <h2>Our Organization & Heritage</h2>
-                <p>Precision Machinekraft is a unique organization with more than 5 decades of experience in the Machine Tool industry. We consist of specialists from various fields including Spindle and Machine Tool design, R&D, Maintenance Engineering, and Bearing Experts.</p>
-                <p>Overseas Bearing possesses the capability to design and produce in very quick lead times for almost any application. Our expertise spans precision manufacturing, custom solutions, and comprehensive reconditioning services for equipment from any manufacturer worldwide.</p>
-                <p>Our mission is to deliver uncompromising precision, reliability, and customer service to leading machine tool manufacturers, OEMs, and industries worldwide. Every product and service bearing the Overseas Bearing name represents our commitment to excellence.</p>
+                <p>Overseas Bearing Agency is a trusted supplier of high-quality bearings and precision motion components, serving diverse industrial sectors with reliable and performance-driven solutions. With a strong focus on quality, consistency, and technical expertise, we provide products that support critical operations across manufacturing, automation, and heavy industry.</p>
+                <p>Our portfolio includes precision bearings, linear motion systems, and power transmission components sourced from globally recognized manufacturers. We are committed to ensuring that every product meets stringent performance standards, delivering durability, accuracy, and long-term reliability.</p>
+                <p>At Overseas Bearing Agency, we go beyond supply — we partner with our clients to understand their requirements and provide tailored solutions that optimize performance and efficiency.</p>
             </div>
             <div className="aboutus-container-box">
                 <div className="stat-box">

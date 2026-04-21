@@ -63,7 +63,8 @@
 .services-menu {
     flex: 0 0 280px;
     position: sticky;
-    top: 20px;
+    top: 120px;
+    scroll-margin-top: 120px;
     display: flex;
     flex-direction: column;
     gap: 20px;

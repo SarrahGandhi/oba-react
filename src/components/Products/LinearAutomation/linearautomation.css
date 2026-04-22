@@ -67,7 +67,7 @@
 }
 
 .linear-automation-detail {
-    padding: 60px 20px;
+    padding: 60px 20px 100px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -125,4 +125,83 @@
     font-weight: 600;
     margin: 10px 0 0 0;
     color: #222;
+}
+
+@media (max-width: 1024px) {
+    .linear-automation-container {
+        margin: 20px;
+    }
+
+    .linear-automation-container h1 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    .linear-automation-container h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .linear-automation-products {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .linear-automation-detail-container {
+        flex-direction: row;
+        gap: 30px;
+
+    }
+
+    .linear-automation-detail-container img {
+        max-width: 100%;
+    }
+
+    .linear-automation-detail h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .linear-automation-container {
+        margin: 20px;
+    }
+
+    .linear-automation-container h1 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    .linear-automation-container h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .linear-automation-products {
+        flex-direction: column;
+    }
+
+    .linear-automation-products div {
+        width: 100%;
+    }
+
+    .linear-automation-detail {
+        padding: 40px 20px;
+    }
+
+    .linear-automation-detail-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .linear-automation-detail-container img {
+        max-width: 100%;
+    }
+
+    .linear-automation-detail h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }

@@ -2,6 +2,8 @@ import React from "react";
 import "./powertransmission.css"
 import { useParams } from "react-router-dom";
 import { powerTransmissionProducts } from "../../../bearingdata";
+import ProductStickyBar from "../../ProductStickyBar/ProductStickyBar";
+
 function PowerTransmissionDetail() {
     const { id } = useParams();
     const products = powerTransmissionProducts.find((p) => p.id === Number(id));
@@ -27,7 +29,7 @@ function PowerTransmissionDetail() {
                     </ul>
                 </div>
             </div>
-
+            <ProductStickyBar />
         </div>
     );
 }

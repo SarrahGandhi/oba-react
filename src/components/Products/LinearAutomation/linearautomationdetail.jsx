@@ -2,6 +2,8 @@ import React from "react";
 import "./linearautomation.css"
 import { useParams } from "react-router-dom";
 import { linearAutomationProducts } from "../../../bearingdata";
+import ProductStickyBar from "../../ProductStickyBar/ProductStickyBar";
+
 function LinearAutomationDetail() {
     const { id } = useParams();
     const products = linearAutomationProducts.find((p) => p.id === Number(id));
@@ -27,7 +29,7 @@ function LinearAutomationDetail() {
                     </ul>
                 </div>
             </div>
-
+            <ProductStickyBar />
         </div>
     );
 }

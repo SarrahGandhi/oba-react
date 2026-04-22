@@ -1,21 +1,23 @@
 .aboutus {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    font-family: inherit; /* Inherit standard project font */
+    font-family: inherit;
+    /* Inherit standard project font */
 }
 
 /* Base typography */
-.aboutus h1, 
-.aboutus h2, 
-.aboutus h3, 
+.aboutus h1,
+.aboutus h2,
+.aboutus h3,
 .aboutus p {
     margin: 0;
     color: #111;
 }
 
 .title {
-    background-color: #f4f7f6; /* Light, elegant hue */
+    background-color: #f4f7f6;
+    /* Light, elegant hue */
     padding: 80px 40px;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -44,13 +46,13 @@
     text-align: left;
 }
 
-.aboutus-container > h2 {
+.aboutus-container>h2 {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.aboutus-container > p {
+.aboutus-container p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
@@ -70,7 +72,8 @@
     background-color: #111;
     padding: 30px 20px;
     text-align: center;
-    border-radius: 8px; /* Clean standard look */
+    border-radius: 8px;
+    /* Clean standard look */
 }
 
 .stat-box h2 {
@@ -106,7 +109,7 @@
 
 .competency:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .competency h2 {
@@ -139,7 +142,7 @@
 
 .products:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .products h3 {
@@ -169,7 +172,7 @@
     margin-bottom: 20px;
 }
 
-.other-products > p {
+.other-products>p {
     font-size: 16px;
     color: #4a4a4a;
     line-height: 1.6;
@@ -254,7 +257,8 @@
 .location-icon {
     width: 44px;
     height: 44px;
-    background-color: #8c9e8e; /* Sage green */
+    background-color: #8c9e8e;
+    /* Sage green */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -336,11 +340,11 @@
     .core-competencies-container {
         grid-template-columns: 1fr;
     }
-    
+
     .other-products ul {
         grid-template-columns: 1fr;
     }
-    
+
     .other-products-container {
         gap: 30px;
     }

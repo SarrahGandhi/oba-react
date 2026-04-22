@@ -2,6 +2,8 @@ import React from "react";
 import "./bearing.css"
 import { useParams } from "react-router-dom";
 import { bearingProducts } from "../../../bearingdata";
+import ProductStickyBar from "../../ProductStickyBar/ProductStickyBar";
+
 function BearingDetail() {
     const { id } = useParams();
     const products = bearingProducts.find((p) => p.id === Number(id));
@@ -27,7 +29,7 @@ function BearingDetail() {
                     </ul>
                 </div>
             </div>
-
+            <ProductStickyBar />
         </div>
     );
 }

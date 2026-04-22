@@ -2,6 +2,8 @@ import React from "react";
 import "./accessories.css"
 import { useParams } from "react-router-dom";
 import { accessoriesProducts } from "../../../bearingdata";
+import ProductStickyBar from "../../ProductStickyBar/ProductStickyBar";
+
 function AccessoriesDetail() {
     const { id } = useParams();
     const products = accessoriesProducts.find((p) => p.id === Number(id));
@@ -27,7 +29,7 @@ function AccessoriesDetail() {
                     </ul>
                 </div>
             </div>
-
+            <ProductStickyBar />
         </div>
     );
 }

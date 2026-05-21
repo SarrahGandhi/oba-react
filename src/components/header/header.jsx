@@ -9,9 +9,10 @@ const fuse = new Fuse(searchIndex, {
     { name: "title", weight: 3 },
     { name: "content", weight: 1 },
   ],
-  threshold: 0.0, // Strict exact matches
+  threshold: 0.3, // Relaxed to allow fuzzy matching (e.g. 'linearabc' matching 'linear')
   ignoreLocation: true,
   minMatchCharLength: 2,
+  useExtendedSearch: true,
 });
 
 function Header() {
@@ -43,8 +44,18 @@ function Header() {
   const getSnippet = (content, term) => {
     if (!term) return "";
     const lowerContent = content.toLowerCase();
-    const lowerTerm = term.toLowerCase();
-    const index = lowerContent.indexOf(lowerTerm);
+    const words = term.trim().toLowerCase().split(/\s+/);
+    
+    // Find the first word that exists in the content
+    let index = -1;
+    for (const word of words) {
+      const matchIndex = lowerContent.indexOf(word);
+      if (matchIndex !== -1) {
+        index = matchIndex;
+        break;
+      }
+    }
+    
     if (index === -1) return content.slice(0, 100) + "...";
 
     const start = Math.max(0, index - 50);
@@ -59,17 +70,25 @@ function Header() {
 
   const highlightText = (text, highlight) => {
     if (!highlight.trim() || highlight.length < 1) return text;
-    // Escape the highlight term for regex
-    const escapedHighlight = highlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    // Regex to find exactly the search term
-    const regex = new RegExp(`(${escapedHighlight})`, "gi");
+    
+    // Split the search string into individual words and escape them
+    const highlightWords = highlight.trim().split(/\s+/);
+    const regexTerms = highlightWords.map(word => 
+      word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+    );
+    
+    // Create a regex that matches ANY of the words
+    const regex = new RegExp(`(${regexTerms.join('|')})`, "gi");
     const parts = text.split(regex);
+    
+    // Lowercase words for easy matching
+    const searchTermsLower = highlightWords.map(w => w.toLowerCase());
 
     return (
       <span>
         {parts.map((part, i) => {
-          // Check if this part is exactly the match
-          const isMatch = part.toLowerCase() === highlight.toLowerCase();
+          // Check if this part matches any of the individual search words
+          const isMatch = searchTermsLower.includes(part.toLowerCase());
           return isMatch ? (
             <span key={i} className="search-highlight">
               {part}
@@ -84,7 +103,12 @@ function Header() {
 
   const filteredResults = useMemo(() => {
     if (!searchTerm || searchTerm.length < 2) return [];
-    return fuse.search(searchTerm).map((result) => ({
+    
+    // Convert "linear abc" into "linear | abc" so that ANY of the words can match
+    const searchWords = searchTerm.trim().split(/\s+/).filter(word => word.length > 0);
+    const formattedSearchTerm = searchWords.join(" | ");
+
+    return fuse.search(formattedSearchTerm).map((result) => ({
       ...result.item,
       snippet: getSnippet(result.item.content, searchTerm),
     }));
